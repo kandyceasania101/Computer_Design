@@ -15,6 +15,7 @@ void loop() {
 
 void scroll(int line, String string) {
   stringLength = string.length();
+  
   for (itr = LCDWidth; itr >= 0; itr--) {
     lcd.setCursor(0, line - 1);
     lcd.print(myName);
@@ -22,6 +23,7 @@ void scroll(int line, String string) {
     lcd.print(string.substring(0, 16));
     delay(setDelay);
   }
+  
   itr = 0;
   
   while (itr != stringLength) {
