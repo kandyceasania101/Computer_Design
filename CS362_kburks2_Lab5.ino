@@ -7,8 +7,7 @@ int buzzer = 10;
 
 int potentiometerValue = 0;
 
-void setup() {
-  
+void setup() { 
   Serial.begin(9600);
   pinMode(pResistor, INPUT);
   pinMode(buzzer, OUTPUT);
@@ -16,20 +15,16 @@ void setup() {
   pinMode(LED9, OUTPUT);
   pinMode(LED5, OUTPUT);
   pinMode(LED6, OUTPUT);
-
 }
 
-void loop() {
-  
+void loop() { 
   value = analogRead(pResistor);
   potentiometerValue = analogRead(potentiometer);
   analogWrite(buzzer, potentiometerValue/4);
-  displayBrightness(value);
-  
+  displayBrightness(value);  
 }
 
-void displayBrightness(int value) {
-  
+void displayBrightness(int value) { 
   if (value <= 205) {
     digitalWrite(LED3, LOW);
     digitalWrite(LED9, LOW);
