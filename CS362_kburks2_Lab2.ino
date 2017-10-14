@@ -1,6 +1,6 @@
 const int button_increase_PIN_2 = 2, button_decrease_PIN_1 = 1;    // the number of the pushbutton pins
-const int PIN_10 = 10, PIN_9 = 9, PIN_8 = 8;                         // the number of the LED pins: blue = pin_10; red = pin_9; green = pin_8
-int buttonState_increase = LOW, buttonState_decrease = LOW, count = 0; // variables for reading the pushbutton status
+const int PIN_10 = 10, PIN_9 = 9, PIN_8 = 8;                       // LED blue = pin_10; LED red = pin_9; LED green = pin_8
+int buttonState_increase = LOW, buttonState_decrease = LOW, count = 0; // pushbutton status variables
 int PIN_START = 10, PIN_STOP = 7, iterator = PIN_START;
 
 void setup() {
@@ -9,16 +9,17 @@ void setup() {
   pinMode(iterator, OUTPUT);
   iterator--;
   }
+  
   // initialize the pushbutton pins as input:
   pinMode(button_increase_PIN_2, INPUT);
-  pinMode(button_decrease_PIN_1, INPUT);
+  pinMode(button_decrease_PIN_1, INPUT); 
 }
 
 void loop() {
   // read the state of the pushbutton value:
   while (buttonState_increase == LOW && buttonState_decrease == LOW) {
   buttonState_increase = digitalRead(button_increase_PIN_2);
-  buttonState_decrease = digitalRead(button_decrease_PIN_1);
+  buttonState_decrease = digitalRead(button_decrease_PIN_1);  
   }
 
   // INCREASE or DECREASE count accordingly
