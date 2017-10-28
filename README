@@ -29,8 +29,8 @@ Have your arduino get the date(mm/dd/yyyy) & time(hh/mm/ss) from the user via th
 Date includes day, month and year
 Time includes hour, minutes and seconds
 You circuit/program should:
-print a prompt on the serial monitor,
-get input of date and time from user  
-display date  and time on the 16x2 display 
-keep accurate time on 16x2 display 
-include error checking for input that doesn't make sense (hours  not in range of 0 to 23, minutes not in range 0 to 59, month not range of 1 to 12, etc).
+-print a prompt on the serial monitor,
+-get input of date and time from user  
+-display date  and time on the 16x2 display 
+-keep accurate time on 16x2 display 
+-include error checking for input that doesn't make sense (hours  not in range of 0 to 23, minutes not in range 0 to 59, month not range of 1 to 12, etc).
