@@ -1,5 +1,3 @@
-# Computer_Design
-
 Lab 1:
 Use the onboard LED on pin 13, a red led on a second digital pin of your choice and a green led on a third digital pin of your choice. 
 Have these cycle so only one LED is on at any given point in time.  So your onboard LED should turn on, then it should turn off and your red LED should turn on, then it should turn off and your green LED should turn on, then onboard, then red, then green, etc . . .
